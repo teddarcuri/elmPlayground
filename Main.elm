@@ -17,7 +17,7 @@ type alias Model =
 
 model : Model
 model =
-  { message = "cool"}
+  { message = "🔥"}
 
 -- UPDATE
 
@@ -57,7 +57,6 @@ body model =
   div [ bodyStyles ]
     [ h1 [] [ text ("Elm is " ++ model.message) ]
     , input [ placeholder model.message, onInput ChangeMessage ] []
-    , p [] [ text model.message ]
     ]
 
 -- Styles
